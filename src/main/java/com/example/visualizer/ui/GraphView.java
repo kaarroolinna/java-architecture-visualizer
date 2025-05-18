@@ -146,6 +146,7 @@ public class GraphView {
     }
 
     private void buildMetricsCharts(VBox infoPane) {
+
         CategoryAxis xAxis = new CategoryAxis();
         NumberAxis   yAxis = new NumberAxis();
         BarChart<String,Number> bar = new BarChart<>(xAxis, yAxis);
@@ -166,7 +167,6 @@ public class GraphView {
         bar.getData().addAll(outS, inS);
         bar.setCategoryGap(10);
         bar.setPrefHeight(250);
-
         bar.setLegendVisible(true);
         xAxis.setTickLabelsVisible(true);
         xAxis.setTickMarkVisible(true);
